@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 1256px;
+  margin: 0 auto;
+}
+/*header*/
+.menu {
+  height: 64px;
+  background-color: rgb(214, 36, 36);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-links {
+  display: flex; /* Hiển thị các liên kết theo hàng ngang */
+  margin-left: 100px; /* Khoảng cách bên trái */
+}
+.menu-link {
+  display: flex; /* Hiển thị nội dung bên trong thẻ a theo hàng ngang */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  margin-left: 10px; /* Khoảng cách giữa các liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+  color: #f3f5f7; /* Màu chữ */
+}
+.menu-link i {
+  margin-right: 5px; /* Khoảng cách giữa biểu tượng và chữ */
+}
+.logo-img {
+  height: 57px;
+  margin-left: 20px;
+}
+.menu-search {
+  width: 650px;
+  margin-left: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  height: 36px;
+}
+.menu-search-input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  padding-left: 20px;
+}
+.banner img {
+  padding: 20px;
+  height: 350px;
+}
+
+/*main*/
+h1 {
+  margin: 20px 0;
+  font-size: 22px;
+}
+.item-tittle {
+  font-size: 15px;
+  color: #333;
+  text-decoration: none;
+}
+.item-tittle:hover {
+  color: rgb(76, 0, 255);
+}
+.item-img {
+  display: block;
+  overflow: hidden;
+}
+.item-img img:hover {
+  transform: scale(1.09);
+  transition: transform 0.3s linear;
+}
+.list-product {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.item-price {
+  margin-top: 8px 0;
+  display: flex;
+  color: #0b0101;
+  gap: 10px;
+}
+
+.item-price span:first-child {
+  color: red;
+  font-size: 20px;
+}
+.container {
+  display: flex; /* Sử dụng flex để sắp xếp các phần tử nằm cạnh nhau */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  font-family: Arial, sans-serif; /* Chọn phông chữ */
+}
+.rating {
+  display: flex; /* Hiển thị sao theo hàng ngang */
+  margin-right: 10px; /* Khoảng cách giữa rating và item-cmt */
+}
+.star {
+  font-size: 20px; /* Kích thước sao */
+  color: rgb(3, 0, 0); /* Màu mặc định */
+  cursor: pointer; /* Khi rê chuột vào sẽ có con trỏ tay */
+}
+.star:hover,
+.star:hover ~ .star {
+  color: gold; /* Màu khi di chuột qua */
+}
+.item-cmt span {
+  font-size: 12px; /* Kích thước chữ cho số đánh giá */
+  color: black; /* Màu chữ cho số đánh giá */
+}
+
+/* footer */
+.footer {
+  margin-top: 100px;
+  margin: 40px auto;
+}
+
+.foot-top {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+ul.foot-top-list {
+  list-style: none;
+}
+ul.foot-top-list li {
+  font-size: 15px;
+  font-weight: 500;
+}
+.foot-bottom {
+  margin-top: 50px;
+  height: 100px;
+  background-color: hwb(0 96% 2%);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.redd {
+  color: red;
+}
+ul.foot-bottom-list {
+  list-style: none;
+}
+ul.foot-bottom-list li {
+  font-size: 15px;
+  font-weight: 500;
+}
+.a {
+  font-size: 12px;
+}
